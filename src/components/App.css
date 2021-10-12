@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+  padding: 20px 0px;
+  transition: all 0.3s;
+}
+
+/* Header Page */
+.App > .header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header .buttonGetPokemon {
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  background-color: #3c5aa6;
+  transition: 0.3s;
+}
+.header .buttonGetPokemon:hover {
+  color: #fafbfe;
+  background-color: #354f91;
+}
+
+/* Card Pokemon */
+.App .container {
+  width: 340px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.container img.loading {
+  width: 50px;
+  animation: rotating 1s linear infinite;
+}
+
+/* Animations */
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .App .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .App .container {
+    height: 300px;
+  }
+}

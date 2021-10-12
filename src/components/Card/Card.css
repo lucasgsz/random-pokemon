@@ -1,0 +1,35 @@
+.Card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 25px;
+}
+.Card img {
+  width: 100%;
+  height: 100%;
+}
+
+.Card .header {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.Card .footer .title {
+  font-weight: 700;
+}
+
+.Card .badgesContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
